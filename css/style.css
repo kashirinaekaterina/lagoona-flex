@@ -19,7 +19,6 @@ img {
 
 body {
     min-width: 320px;
-    max-width: 1170px;
     font-family: 'font', sans-serif;
 }
 
@@ -43,7 +42,7 @@ body {
 .container {
     width: 1200px;
     padding: 0 15px;
-    margin-bottom: 70px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -87,6 +86,10 @@ body {
     padding: 13px 20px;
 }
 
+.header-btn:not(:last-child) {
+margin-right: 40px;
+}
+
 .hidden {
     display: none;
 }
@@ -94,22 +97,22 @@ body {
 /* special */
 .special-offers-div {
     flex-direction: column;
+    margin-right: 24px;
 }
 
 .special-offers-item {
-    height: 258px;
+    min-height: 258px;
     width: 573px;
-    margin-right: 24px;
     flex-direction: column;
 }
 
-.special-offers-item:not(:last-child) {
-    padding-bottom: 24px;
+.special-offers-item:first-child {
+    margin-bottom: 24px;
 }
 
 .special-offers-item-div {
     width: 573px;
-    height: 540px;
+    min-height: 540px;
 }
 
 .special-offers-item-title {
@@ -141,14 +144,25 @@ body {
     margin-left: 45px;
 }
 
+.special-offers {
+    margin-bottom: 70px;
+}
+
 /* about us */
 .about-us-text {
     margin: 0;
     max-width: 888px;
+}
+
+.about-us {
     margin-bottom: 70px;
 }
 
 /* services */
+.services {
+    margin-bottom: 70px;
+}
+
 .services-items {
     flex-wrap: wrap;
 }
@@ -160,7 +174,7 @@ body {
 }
 .services-item {
     width: 573px;
-    height: 330px;
+    min-height: 330px;
     margin-bottom: 24px;
     flex-direction: column;
     outline: 1px solid coral;
@@ -186,13 +200,17 @@ body {
 }
 
 /* advantages */
+.advantages {
+    margin-bottom: 70px;
+}
+
 .advantages-items {
     flex-wrap: wrap;
 }
 
 .advantages-item {
     width: 276px;
-    height: 276px;
+    min-height: 276px;
     outline: 1px solid coral;
     margin-bottom: 22px;
 }
@@ -211,6 +229,10 @@ body {
 }
 
 /* placement */
+.placement {
+    margin-bottom: 70px;
+}
+
 .placement-items {
     flex-wrap: wrap;
     margin: 0;
@@ -218,7 +240,7 @@ body {
 
 .placement-item {
     width: 374px;
-    height: 440px;
+    min-height: 440px;
     outline: 1px solid coral;
     margin-bottom: 24px;
 }
@@ -227,7 +249,7 @@ body {
     margin-right: 24px;
 }
 
-.placement-item:not(:nth-child(-n+4)) {
+.placement-item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
@@ -240,3 +262,4 @@ body {
     margin-top: 373px;
     margin-left: 54px;
 }
+
